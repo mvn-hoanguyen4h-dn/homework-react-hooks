@@ -11,13 +11,6 @@ function Form() {
   const agree = useField("checkbox")
 
   const fullnameEl = useRef()
-  const emailEl = useRef()
-  const passwordEl = useRef()
-  const nationEl = useRef()
-  const infoEl = useRef()
-  const femaleEl = useRef()
-  const maleEl = useRef()
-  const otherEl = useRef()
 
   const [list, setList] = useState(JSON.parse(localStorage.getItem('data')) || [])
 
@@ -78,7 +71,6 @@ function Form() {
             {...email}
             id="email"
             name="email"
-            ref={emailEl}
             required
           />
         </div>
@@ -88,7 +80,6 @@ function Form() {
             {...password}
             id="password"
             name="password"
-            ref={passwordEl}
             required
           />
         </div>
@@ -98,7 +89,6 @@ function Form() {
             {...nationality}
             name="nationality"
             id="nationality"
-            ref={nationEl}
             required
           >
             <option>Please choose your nationality</option>
@@ -115,19 +105,16 @@ function Form() {
             {...gender}
             name="gender"
             value="female"
-            ref={femaleEl}
           /> Female
           <input
             {...gender}
             name="gender"
             value="male"
-            ref={maleEl}
           /> Male
           <input
             {...gender}
             name="gender"
             value="other"
-            ref={otherEl}
           /> Other
         </div>
         <div className="form-control">
@@ -136,7 +123,6 @@ function Form() {
             {...info}
             id="info"
             name="info"
-            ref={infoEl}
             required
           />
         </div>
