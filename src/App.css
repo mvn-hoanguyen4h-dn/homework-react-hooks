@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+    margin: 40px;
+}
+
+form{
+  text-align: left;
+  width: 460px;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+h2{
+  text-align: center;
+}
+
+label{
+  display: block;
+  padding: 5px 0;
+}
+
+.btn{
+  width: 100%;
+  border-radius: 10px;
+  padding: 6px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.form-control{
+  width: 100%;
+}
+
+input:not([type="checkbox"]):not([type="radio"]), textarea, select {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 36px;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+input[type="radio"]{  
+  margin-left: 30px;
+}
+
+textarea{
+  min-height: 50px;
+}
+
+.user-form{
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-data{
+  position: relative;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  margin-left: 60px;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+table, tbody, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+i{
+  color: rgb(187, 77, 96);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+th,td{
+  padding: 16px 20px;
+  text-align: center;
+}
+
+
+th:first-child,
+td:first-child,
+th:nth-child(2),
+td:nth-child(2),
+th:nth-child(6),
+td:nth-child(6){
+  width: 200px;
+}
+
+/* Page */
+.user-list{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.user-item{
+  list-style: none;
+}
+
+.user-item img{
+  width: 140px;
+  height: 140px;
+}
+
+.user-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-lastname{
+  margin-left: 14px;
+}
+
+.page-btns{
+  text-align: center;
+}
+
+.page-btn{
+  cursor: pointer;
+  margin-top: 40px;
+  padding: 6px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+}
+
+.page-btn:hover{
+  opacity: 0.8;
+}
+
+.page-btn:not(:last-child){
+  margin-right: 20px;
+}
